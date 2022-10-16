@@ -1,3 +1,7 @@
 #inputStyle {
     
 }
+#inputContainer {
+    margin-top: 50px;
+    position: absolute;
+}

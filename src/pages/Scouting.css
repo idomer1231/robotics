@@ -22,3 +22,17 @@
     cursor: pointer;
     transform: scale(1.2);
 }
+.backBtn {
+    background-color: white;
+    border: none;
+    width: 50px;
+    height: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    position: absolute;
+    margin-left: calc(100% - 80px);
+    margin-top: -20px;
+}
+.backBtn:hover {
+    cursor: pointer;
+}

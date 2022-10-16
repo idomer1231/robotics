@@ -1,10 +1,17 @@
-import { useRef } from "react";
+import { Component, useRef, useState } from "react";
+import React from "react";
 import "./InputData.css";
+import GetData from "./data";
 
-function InputData() {
+class InputData extends Component {
 
-  function submitHandeler(event) {
+  submitHandeler(event) {
     event.preventDefault();
+
+    this.setState((state) => ({
+      count: state.count + 1,
+    }));
+
     /*var mysql = require('mysql');
     var con = mysql.createConnection({
       host: "localhost",
@@ -17,26 +24,27 @@ function InputData() {
       console.log("Connected!");
     })*/
   }
-
-  return (
-    <div id="inputContainer">
-      <form onSubmit={submitHandeler}>
-        <input
-          type="text"
-          id="teamNumber"
-          placeholder="מספר הקבוצה"
-          className="inputS"
-          maxLength={4}
-          onKeyPress={(event) => {
-            if (!/[0-9]/.test(event.key)) {
-              event.preventDefault();
-            }
-          }}
-        />
-        <input type="submit" value="בחר קבוצה" />
-      </form>
-    </div>
-  );
+  render() {
+    return (
+      <div id="inputContainer">
+        <form onSubmit={this.submitHandeler}>
+          <input
+            type="text"
+            id="teamNumber"
+            placeholder="מספר הקבוצה"
+            className="inputS"
+            maxLength={4}
+            onKeyPress={(event) => {
+              if (!/[0-9]/.test(event.key)) {
+                event.preventDefault();
+              }
+            }}
+          />
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+    );
+  }
 }
 
 export default InputData;
