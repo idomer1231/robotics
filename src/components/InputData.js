@@ -5,7 +5,7 @@ function InputData() {
 
   function submitHandeler(event) {
     event.preventDefault();
-    var mysql = require('mysql');
+    /*var mysql = require('mysql');
     var con = mysql.createConnection({
       host: "localhost",
       user: "idomer",
@@ -15,7 +15,7 @@ function InputData() {
     con.connect(function(err) {
       if(err) throw err;
       console.log("Connected!");
-    })
+    })*/
   }
 
   return (
