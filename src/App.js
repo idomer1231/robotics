@@ -18,8 +18,6 @@ function App() {
         <Route path="/" element={<Home />} exact />
         <Route path="/scouting" element={<Scouting />} />
         <Route path="/chat" element={<Chat/>} />
-        <Route path="/teamData" element={<GetData />} />
-        <Route path="/addData" element={<InputData />} />
       </Routes>
     </div>
   );

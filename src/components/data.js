@@ -2,9 +2,15 @@ import React, { Component } from "react";
 import "./GetData.css"
 
 class GetData extends Component {
+  
+  submitHandeler() {
+
+  }
+
   render() {
     return (
       <div id="inputContainer">
+        <form onSubmit={this.submitHandeler} id="formCont">
         <input
           type="text"
           id="teamNumber"
@@ -17,9 +23,10 @@ class GetData extends Component {
             }
           }}
         />
-        <submit className="inputS" id="sendID">
+        <submit id="sendID">
           הצג מידע
         </submit>
+        </form>
       </div>
     );
   }

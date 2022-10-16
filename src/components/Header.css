@@ -2,7 +2,6 @@
     height: 100px;
     width: 100%;
     background-color: #ff5013;
-    border-bottom: white 1px solid;
 }
 #buttons-container {
     display: flex;

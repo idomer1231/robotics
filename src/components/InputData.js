@@ -2,6 +2,7 @@ import { Component, useRef, useState } from "react";
 import React from "react";
 import "./InputData.css";
 import GetData from "./data";
+//import "mysql";
 
 class InputData extends Component {
 
@@ -12,22 +13,12 @@ class InputData extends Component {
       count: state.count + 1,
     }));
 
-    /*var mysql = require('mysql');
-    var con = mysql.createConnection({
-      host: "localhost",
-      user: "idomer",
-      password: "H]8$(6B5@c4~Ih}{"
-    });
-
-    con.connect(function(err) {
-      if(err) throw err;
-      console.log("Connected!");
-    })*/
+    //const mysql = require('mysql');
   }
   render() {
     return (
       <div id="inputContainer">
-        <form onSubmit={this.submitHandeler}>
+        <form onSubmit={this.submitHandeler} id="formCont">
           <input
             type="text"
             id="teamNumber"
@@ -40,7 +31,7 @@ class InputData extends Component {
               }
             }}
           />
-          <input type="submit" value="submit" />
+          <input type="submit" value="בחירת קבוצה" id="sendIDIn" className="inputS"/>
         </form>
       </div>
     );

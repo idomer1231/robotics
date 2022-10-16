@@ -5,3 +5,19 @@
     margin-top: 50px;
     position: absolute;
 }
+#sendIDIn {
+    height: 40px;
+    border-radius: 2px;
+    margin-right: 5px;
+    padding: 5px;
+    font-size: 1.1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    transition: 80ms ease-in;
+    background-color: white;
+}
+#sendIDIn:hover {
+    transform: translate(-10px, 0);
+    cursor: pointer;
+}

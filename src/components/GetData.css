@@ -1,7 +1,14 @@
 #inputContainer {
     width: 100%;
-    margin-top: 50px;
     direction: rtl;
+    display: flex;
+    flex-direction: row;
+}
+#formCont {
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -21,15 +28,18 @@ input::-webkit-inner-spin-button {
     border: none;
 }
 #sendID {
-    height: 40px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    margin-right: 20px;
+    height: 30px;
+    border-radius: 2px;
+    margin-right: 5px;
     padding: 5px;
-    top: 50%;
-    transform: translate(0, -50%);
+    font-size: 1.1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    transition: 80ms ease-in;
+    background-color: white;
 }
-
-submit:hover {
+#sendID:hover {
+    transform: translate(-10px, 0);
     cursor: pointer;
 }

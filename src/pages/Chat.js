@@ -1,7 +1,7 @@
 function Chat() {
     return (
         <div>
-            <center><h1>עוד לא עובד</h1></center>
+            <center><h1>בהמשך</h1></center>
         </div>
     );
 }
