@@ -2,18 +2,30 @@ import { Component, useRef, useState } from "react";
 import React from "react";
 import "./InputData.css";
 import GetData from "./data";
-//import "mysql";
+
 
 class InputData extends Component {
-
   submitHandeler(event) {
     event.preventDefault();
 
-    this.setState((state) => ({
-      count: state.count + 1,
-    }));
+    /*const mysql = require("mysql");
+    const con = mysql.createConnection({
+      host: "localhost",
+      user: "root",
+      password: "Freshfood1!",
+      database: "teams"
+    });
 
-    //const mysql = require('mysql');
+    con.connect(function(err) {
+      if (err) throw err;
+      console.log("Connected!");
+    });
+
+    con.end();*/
+
+    
+
+
   }
   render() {
     return (
@@ -31,7 +43,12 @@ class InputData extends Component {
               }
             }}
           />
-          <input type="submit" value="בחירת קבוצה" id="sendIDIn" className="inputS"/>
+          <input
+            type="submit"
+            value="בחירת קבוצה"
+            id="sendIDIn"
+            className="inputS"
+          />
         </form>
       </div>
     );
