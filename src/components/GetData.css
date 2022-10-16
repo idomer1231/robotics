@@ -1,0 +1,35 @@
+#inputContainer {
+    width: 100%;
+    margin-top: 50px;
+    direction: rtl;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+#teamNumber {
+    float: right;
+    
+}
+.inputS {
+    height: 40px;
+    outline: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 1.1rem;
+    background-color: white;
+    border: none;
+}
+#sendID {
+    height: 40px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-right: 20px;
+    padding: 5px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+submit:hover {
+    cursor: pointer;
+}

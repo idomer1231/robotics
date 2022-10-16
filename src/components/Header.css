@@ -1,0 +1,32 @@
+#container {
+    height: 100px;
+    width: 100%;
+    background-color: #ff5013;
+    border-bottom: white 1px solid;
+}
+#buttons-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 100%;
+
+}
+.headerBtn {
+    font-size: 1.7rem;
+    padding-right: 15px;
+    color: #0423d6;
+    text-decoration: none;
+    font-weight: 600;
+}
+.headerBtn:hover {
+    text-decoration: underline;
+}
+#changeBackground {
+    float: right;
+    outline: none;
+    background-color: white;
+    border: none;
+}
+#changeBackground:hover {
+    cursor: pointer;
+}
