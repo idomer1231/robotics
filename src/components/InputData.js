@@ -7,8 +7,8 @@ import GetData from "./data";
 class InputData extends Component {
   submitHandeler(event) {
     event.preventDefault();
-
-    /*const mysql = require("mysql");
+    const express = require('express');
+    const mysql = require("mysql");
     const con = mysql.createConnection({
       host: "localhost",
       user: "root",
@@ -21,7 +21,7 @@ class InputData extends Component {
       console.log("Connected!");
     });
 
-    con.end();*/
+    con.end();
 
     
 
