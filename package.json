@@ -19,6 +19,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.2",
     "react-scripts": "^5.0.1",
+    "robotics": "github:idomer1231/robotics",
     "timers-browserify": "^2.0.12",
     "tls": "^0.0.1",
     "util": "^0.12.4",
